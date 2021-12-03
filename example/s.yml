@@ -1,0 +1,11 @@
+edition: 1.0.0
+name: oss
+access: hanxie
+vars: 
+  region: cn-beijing
+services:
+  dns:
+    component: ${path(..)} 
+    props:
+      domainName: dankun.serverless-developer.com
+      value: 	721a2f90726246e1b9712930d552a85e-cn-hongkong.alicloudapi.com

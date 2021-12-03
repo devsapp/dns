@@ -1,0 +1,32 @@
+Type: Component
+Name: dns
+Version: 0.0.1
+Category: 基础云服务
+HomePage: 'https://github.com/devsapp/dns'
+Tags:
+  - DNS组件
+Description: 阿里云DNS组件
+Commands:
+  deploy: 构建dns解析
+Properties:
+  domainName:
+    Description: 需要绑定的域名
+    Required: true
+    Example: ''
+    Default: ''
+    Type:
+      - String
+  value:
+    Description: 指向的目标地址
+    Required: true
+    Example: ''
+    Default: ''
+    Type:
+      - String
+  type:
+    Description: 类型
+    Required: true
+    Example: ''
+    Default: CNAME
+    Type:
+      - String
