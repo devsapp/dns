@@ -25,7 +25,13 @@ export default class DnsComponent extends Base {
     static createClient(accessKeyId: string, accessKeySecret: string): any;
     private request;
     private reportInfo;
-    protected addDomainRecord(data: dnsData): unknown;
-    deploy(inputs: InputProps): unknown;
+    protected addDomainRecord(data: dnsData): Promise<{
+        domainName: string;
+        value: string;
+    }>;
+    deploy(inputs: InputProps): Promise<{
+        domainName: string;
+        value: string;
+    }>;
 }
 export {};
